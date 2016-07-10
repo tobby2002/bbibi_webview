@@ -16,15 +16,16 @@ import android.support.design.widget.AppBarLayout.LayoutParams.ScrollFlags;
 import android.webkit.WebSettings;
 
 import com.thefinestartist.Base;
-import kr.co.bbibi.finestwebview.enums.Position;
-import kr.co.bbibi.finestwebview.listeners.BroadCastManager;
-import kr.co.bbibi.finestwebview.listeners.WebViewListener;
 import com.thefinestartist.utils.content.Ctx;
 import com.thefinestartist.utils.content.Res;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+
+import kr.co.bbibi.finestwebview.enums.Position;
+import kr.co.bbibi.finestwebview.listeners.BroadCastManager;
+import kr.co.bbibi.finestwebview.listeners.WebViewListener;
 
 /**
  * Created by Leonardo on 11/21/15.

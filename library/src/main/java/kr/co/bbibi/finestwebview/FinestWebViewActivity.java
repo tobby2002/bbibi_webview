@@ -642,14 +642,17 @@ public class FinestWebViewActivity extends AppCompatActivity implements AppBarLa
                 public boolean onCreateWindow(WebView view, boolean dialog, boolean userGesture, Message resultMsg) {
 
                     newWebView = new WebView(view.getContext());
-                    WebSettings webSettings = newWebView.getSettings();
-                    webSettings.setJavaScriptEnabled(true);
-                    webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
-                    webSettings.setSupportMultipleWindows(true);
-
-                    newWebView.setWebViewClient(new MyWebViewClient());
-
-                    swipeRefreshLayout.addView(newWebView);    // 화면에 보여질 수 있도록 add view
+//                    WebSettings webSettings = newWebView.getSettings();
+//                    webSettings.setJavaScriptEnabled(true);
+//                    webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+//                    webSettings.setSupportMultipleWindows(true);
+//
+//                    newWebView.setWebViewClient(new MyWebViewClient());
+//
+//
+//
+//
+//                    swipeRefreshLayout.addView(newWebView);    // 화면에 보여질 수 있도록 add view
 
                     WebView.WebViewTransport transport = (WebView.WebViewTransport)resultMsg.obj;
                     transport.setWebView(newWebView);
@@ -661,8 +664,8 @@ public class FinestWebViewActivity extends AppCompatActivity implements AppBarLa
                 @Override
                 public void onCloseWindow(WebView window) {
                     super.onCloseWindow(window);
-                    webLayout.removeView(window);    // 화면에서 제거
-                    swipeRefreshLayout.removeView(window);
+//                    webLayout.removeView(window);    // 화면에서 제거
+//                    swipeRefreshLayout.removeView(window);
                 }
 
 

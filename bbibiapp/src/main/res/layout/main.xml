@@ -31,7 +31,7 @@
         android:layout_alignParentBottom="true"
         android:background="@color/bluePrimary"
         android:onClick="onClick"
-        android:text="경매차량"
+        android:text="삐비채널"
         android:textColor="@color/finestWhite" />
 
     <Button
